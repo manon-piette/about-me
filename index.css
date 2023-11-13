@@ -6,7 +6,7 @@
     font-family: 'Public Sans', sans-serif;
 }
 
-html,body{height: 100%;}
+html,body{height: 100%; width: 100%;overflow-x: hidden;}
 
 /*#region home*/
 #home{
@@ -121,6 +121,7 @@ html,body{height: 100%;}
 
 /*#region process*/
 main{
+    margin-top: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,3 +231,160 @@ footer{
 footer .spacer{
     height: 200px;
 }
+
+@media screen and (max-width: 700px){
+    body{
+        /* background-color: red; */
+    }
+    #home div{
+        width: 90% !important;
+        /* background-color: blue; */
+    } 
+    #home h1{
+        font-size: 90px !important;
+    }
+    #home img{
+        width: 70%;
+    }
+
+    #process h1{
+        font-size: 70px;
+    }
+
+    #process > article:nth-child(2){
+        margin-top: 70vh;
+        transform: translate(10px, calc(-50%)) rotate(10deg) scale(0.8);
+    
+    }
+    #process > article:nth-child(3){
+        transform: translate(25px, calc(-50%)) rotate(-3deg) scale(0.8);
+    }
+    #process > article:nth-child(4){
+        transform: translate(0px, calc(-50% - 20px)) rotate(1deg) scale(0.8);
+    }
+    #process > article:nth-child(5){
+        transform: translate(-20px, calc(-50% - 30px)) rotate(-8deg) scale(0.8);
+    }
+    #process > article:nth-child(6){
+        transform: translate(5px, calc(-50% - 40px)) rotate(3deg) scale(0.8);
+    }
+    #process > article:nth-child(6){
+        transform: translate(5px, calc(-50% + 40px)) rotate(-5deg) scale(0.8);
+    }
+    #process > article:nth-child(7){
+        transform: translate(5px, calc(-50% + 20px)) rotate(7deg) scale(0.8);
+    }
+    #process > article:nth-child(8){
+        transform: translate(5px, calc(-50% + 20px)) rotate(0deg) scale(0.8);
+    }
+
+    main h1{
+        font-size: 70px;
+    }
+    #career img{
+        width: 80% !important;
+        margin: 0 auto !important;
+        display: block;
+    }
+
+    #skills img, #like img{
+        width: 50px !important;
+    }
+    #skills p, #like p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        /* background-color: rgb(89, 0, 255); */
+    }
+
+    #skills >div, #like > div{
+        gap: 30px !important;
+    }
+}
+@media screen and (max-width: 400px){
+    body{
+        /* background-color: rgb(255, 0, 238); */
+    }
+
+    #home h1{
+        font-size: 60px !important;
+    }
+    #home img{
+        width: 90%;
+    }
+    #process{
+        width: 95% !important;
+    }
+    #process h1{
+        font-size: 50px;
+    }
+
+    #process article{
+        margin-top: 50px;
+    }
+    #process > article:nth-child(2){
+        margin-top: 70vh;
+        transform: translate(10px, calc(-50%)) rotate(10deg) scale(0.6);
+    }
+    #process > article:nth-child(3){
+        transform: translate(25px, calc(-50%)) rotate(-3deg) scale(0.6);
+    }
+    #process > article:nth-child(4){
+        transform: translate(0px, calc(-50% - 20px)) rotate(1deg) scale(0.6);
+    }
+    #process > article:nth-child(5){
+        transform: translate(-20px, calc(-50% - 30px)) rotate(-8deg) scale(0.6);
+    }
+    #process > article:nth-child(6){
+        transform: translate(5px, calc(-50% - 40px)) rotate(3deg) scale(0.6);
+    }
+    #process > article:nth-child(6){
+        transform: translate(5px, calc(-50% + 40px)) rotate(-5deg) scale(0.6);
+    }
+    #process > article:nth-child(7){
+        transform: translate(5px, calc(-50% + 20px)) rotate(7deg) scale(0.6);
+    }
+    #process > article:nth-child(8){
+        transform: translate(5px, calc(-50% + 20px)) rotate(0deg) scale(0.6);
+    }
+    main{
+        margin-top: 200px;
+    }
+    main h1{
+        font-size: 50px;
+    }
+    main h2{
+        font-size: 30px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    #skills img, #like img{
+        width: 40px !important;
+    }
+    #skills div, #like div{
+        gap: 20px !important;
+    }
+    #skills p, #like p{
+        margin-top: 0px !important;
+        font-size: 10px;
+    }
+
+    footer{
+        transform: scale(0.6);
+        margin-top: 0;
+    }
+}
+
+
+
+*{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none !important;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
